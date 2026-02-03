@@ -1,0 +1,257 @@
+.layout {
+  min-height: 100vh;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+
+.site-layout-content:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .site-layout-content {
+    padding: 16px;
+    margin: 0 16px;
+  }
+  
+  .logo {
+    display: none;
+  }
+  
+  .ant-layout-header {
+    padding: 0 16px;
+    height: auto;
+    min-height: 64px;
+  }
+  
+  .ant-menu-horizontal {
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 64px;
+  }
+  
+  .ant-menu-item {
+    padding: 0 8px;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .ant-row {
+    margin-bottom: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-layout-content {
+    padding: 12px;
+    margin: 0 12px;
+  }
+  
+  .ant-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .ant-input {
+    font-size: 12px;
+    height: 32px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+  
+  .ant-form-item-label {
+    font-size: 12px;
+  }
+  
+  .ant-card {
+    margin-bottom: 12px;
+  }
+  
+  .ant-card-head-title {
+    font-size: 14px;
+  }
+  
+  .ant-list-item {
+    padding: 12px;
+  }
+  
+  .ant-statistic-title {
+    font-size: 12px;
+  }
+  
+  .ant-statistic-content {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+  
+  h4 {
+    font-size: 12px;
+  }
+  
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .ant-menu-item {
+    font-size: 12px;
+    padding: 0 6px;
+  }
+  
+  .ant-layout-footer {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 加载容器 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+/* 响应式表格 */
+@media (max-width: 768px) {
+  .ant-table {
+    font-size: 12px;
+  }
+  
+  .ant-table-thead > tr > th {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .ant-table-tbody > tr > td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* 卡片动画 */
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 按钮动画 */
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ant-btn:active {
+  transform: translateY(0);
+}
+
+/* 表单动画 */
+.ant-form-item {
+  transition: all 0.3s ease;
+}
+
+.ant-form-item:hover {
+  transform: translateX(4px);
+}

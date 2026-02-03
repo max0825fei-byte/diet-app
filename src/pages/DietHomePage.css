@@ -1,0 +1,210 @@
+.diet-home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #1890ff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.calorie-stats {
+  margin-bottom: 30px;
+}
+
+.stats-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.stats-content {
+  padding: 0 16px 16px;
+}
+
+.calorie-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.calorie-item .label {
+  font-size: 14px;
+  color: #666;
+}
+
+.calorie-item .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.calorie-item .value.exceeded {
+  color: #ff4d4f;
+}
+
+.limit-setting {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.food-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.food-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.food-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.food-calories {
+  font-size: 14px;
+  color: #666;
+}
+
+.food-detail {
+  padding: 8px 0;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.detail-item .label {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-item .value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.record-form,
+.custom-food-form {
+  padding: 8px 0;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-item .label {
+  font-size: 14px;
+  color: #666;
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .diet-home-page {
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .search-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-section > * {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 12px;
+  }
+
+  .food-list {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .calorie-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .limit-setting {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .form-item .label {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .calorie-item .value {
+    font-size: 14px;
+  }
+
+  .food-name {
+    font-size: 14px;
+  }
+
+  .food-calories {
+    font-size: 12px;
+  }
+}
